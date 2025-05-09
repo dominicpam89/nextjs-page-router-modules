@@ -1,3 +1,5 @@
+import HomeBrandText from '@/components/home/brand-text';
+import HomeContainer from '@/components/home/container';
 import { Geist, Geist_Mono } from 'next/font/google';
 
 const geistSans = Geist({
@@ -13,7 +15,11 @@ const geistMono = Geist_Mono({
 export default function Home() {
      return (
           <main
-               className={`${geistSans.variable} ${geistMono.variable}`}
-          ></main>
+               className={`${geistSans.variable} ${geistMono.variable} w-full h-full`}
+          >
+               <HomeContainer>
+                    <HomeBrandText />
+               </HomeContainer>
+          </main>
      );
 }
