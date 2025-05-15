@@ -1,6 +1,7 @@
 import HomeBrandText from '@/components/home/brand-text';
 import HomeContainer from '@/components/home/container';
 import { Geist, Geist_Mono } from 'next/font/google';
+import SimpleNav from '@/components/SimpleNav';
 
 const geistSans = Geist({
      variable: '--font-geist-sans',
@@ -19,6 +20,7 @@ export default function Home() {
           >
                <HomeContainer>
                     <HomeBrandText />
+                    <SimpleNav />
                </HomeContainer>
           </main>
      );
